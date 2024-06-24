@@ -21,12 +21,24 @@ function SortList({ onSortChange }) {
         onChange={handleFilterChange}
         style={{ width: "20rem", height: "2rem" }}
       >
-        <option value="f-a">Frontend Question (ASC)</option>
-        <option value="f-d">Frontend Question (DES)</option>
-        <option value="a-a">Algorithmic Question (ASC)</option>
-        <option value="a-d">Algorithmic Question (DES)</option>
-        <option value="name-a">Name (A-Z)</option>
-        <option value="name-d">Name (Z-A)</option>
+        <option value="f-a" style={{ fontSize: "1rem" }}>
+          Frontend Question (ASC)
+        </option>
+        <option value="f-d" style={{ fontSize: "1rem" }}>
+          Frontend Question (DES)
+        </option>
+        <option value="a-a" style={{ fontSize: "1rem" }}>
+          Algorithmic Question (ASC)
+        </option>
+        <option value="a-d" style={{ fontSize: "2rem" }}>
+          Algorithmic Question (DES)
+        </option>
+        <option value="name-a" style={{ fontSize: "1rem" }}>
+          Name (A-Z)
+        </option>
+        <option value="name-d" style={{ fontSize: "1rem" }}>
+          Name (Z-A)
+        </option>
       </select>
     </>
   );
