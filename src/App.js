@@ -12,7 +12,6 @@ function App() {
   };
 
   const handleSortChange = (sortName) => {
-    console.log(sortName);
     const candidatesCopy = [...candidates];
 
     if (sortName === "f-a") {

@@ -16,7 +16,11 @@ function Form({ onAddCandidate }) {
       frontEndScore: +newCandidate.frontEndScore,
       algorithmicScore: +newCandidate.algorithmicScore,
     };
-
+    //Check if the scores are not negative
+    if (candidate.frontEndScore < 0 || candidate.algorithmicScore < 0) {
+      setError("Scores must be positive numbers");
+      return;
+    }
     if (
       !candidate.frontEndScore ||
       !candidate.algorithmicScore ||
